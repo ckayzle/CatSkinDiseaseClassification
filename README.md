@@ -7,6 +7,13 @@ predict, side by side. Classes: **Flea Allergy Dermatitis**, **Healthy Skin**, *
 
 You do not need to know Streamlit. Just follow the steps below in order.
 
+## Repository layout
+
+```
+app/        the Streamlit web app and the trained models
+training/   the training notebook and the dataset (Thesis Dataset.zip)
+```
+
 ---
 
 ## What you need
@@ -15,12 +22,11 @@ The app files plus one folder per model (each with the `model.keras` and
 `model_info.json` exported by the notebook):
 
 ```
-cat-app/
+app/
 ├── app.py
 ├── edge.py
 ├── benchmark.py
 ├── requirements.txt
-├── README.md
 └── models/
     ├── ResNet50/
     │   ├── model.keras
@@ -74,7 +80,7 @@ in `models/tflite/` automatically.
 
 ## Step 3 — Open a terminal in the app folder
 
-- **Windows:** open the `cat-app` folder in File Explorer, click the address bar,
+- **Windows:** open the `app` folder in File Explorer, click the address bar,
   type `powershell`, and press Enter.
 - **Mac:** right-click the folder → "New Terminal at Folder" (or `cd` into it).
 
@@ -169,11 +175,11 @@ python benchmark.py --data test_images       # also accuracy (fold-3 test images
 If you want a link others can open (e.g., your panel):
 
 1. Make a free account at https://streamlit.io/cloud
-2. Create a free GitHub account and upload this folder (including `models/`) to a repository.
-   - Note: GitHub rejects files over 100 MB. `models/ResNet50/model.keras` is about 228 MB,
+2. Push this repository to GitHub (the models are already stored with Git LFS).
+   - Note: GitHub rejects files over 100 MB. `app/models/ResNet50/model.keras` is about 228 MB,
      so upload it with Git LFS (or leave ResNet50 out of the online version).
 3. In Streamlit Community Cloud, click **New app**, choose your repository, set the main
-   file to `app.py`, and deploy. You get a public link.
+   file to `app/app.py`, and deploy. You get a public link.
 
 ---
 

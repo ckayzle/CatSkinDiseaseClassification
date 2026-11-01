@@ -29,7 +29,7 @@ CLASS_NAMES = ["Flea Allergy Dermatitis", "Healthy Skin", "Ringworm", "Scabies"]
 IMG_SIZE = (224, 224)
 SQUARE_SIZE = 384                   # notebook letterboxes to 384x384 before resizing to 224
 PAD_FILL = (114, 114, 114)          # same neutral gray as the notebook
-MODELS_DIR = "models"
+MODELS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "models")  # works from any working dir
 TFLITE_DIR = os.path.join(MODELS_DIR, "tflite")
 
 PREPROCESS = {
