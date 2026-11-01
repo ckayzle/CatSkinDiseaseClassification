@@ -12,7 +12,10 @@ You do not need to know Streamlit. Just follow the steps below in order.
 ```
 app/        the Streamlit web app and the trained models
 training/   the training notebook and the dataset (Thesis Dataset.zip)
+paper/      the thesis manuscript and poster (PDF)
 ```
+
+Thesis: [Final Manuscript](paper/Final%20Manuscript.pdf) · [Poster](paper/Cat%20Skin%20Thesis%20Poster.pdf)
 
 ---
 
