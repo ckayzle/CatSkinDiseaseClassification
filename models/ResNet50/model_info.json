@@ -1,0 +1,22 @@
+{
+  "arch": "ResNet50",
+  "fold": 3,
+  "fold_accuracy": 0.9305555555555556,
+  "class_names": [
+    "Flea Allergy Dermatitis",
+    "Healthy Skin",
+    "Ringworm",
+    "Scabies"
+  ],
+  "img_size": [
+    224,
+    224
+  ],
+  "square_size": 384,
+  "pad_fill": [
+    114,
+    114,
+    114
+  ],
+  "tf_version": "2.21.0"
+}

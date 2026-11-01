@@ -1,0 +1,10 @@
+model,engine,threads,params,gflops,file_mb,mean_ms,median_ms,p95_ms,std_ms,fps
+EfficientNetB0,Keras (TensorFlow),all,4378535,0.801,43.35,27.99,25.23,37.35,5.67,39.63
+EfficientNetB0,TFLite fp32,1,4378535,0.801,16.54,12.9,12.78,13.68,0.56,78.25
+EfficientNetB0,TFLite int8,1,4378535,0.801,4.65,46.35,46.25,48.27,1.29,21.62
+MobileNetV2,Keras (TensorFlow),all,2586948,0.613,26.1,17.88,17.42,21.29,1.53,57.39
+MobileNetV2,TFLite fp32,1,2586948,0.613,9.7,6.55,6.55,7.06,0.31,152.62
+MobileNetV2,TFLite int8,1,2586948,0.613,2.7,26.59,26.53,27.93,0.79,37.7
+ResNet50,Keras (TensorFlow),all,24113284,7.752,227.75,60.46,60.64,65.53,3.37,16.49
+ResNet50,TFLite fp32,1,24113284,7.752,91.61,72.15,72.03,75.81,2.37,13.88
+ResNet50,TFLite int8,1,24113284,7.752,23.31,26.56,26.29,28.43,1.15,38.04
